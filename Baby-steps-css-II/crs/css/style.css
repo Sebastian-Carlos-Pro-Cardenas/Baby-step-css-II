@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0d1b2a;
+    letter-spacing: 0.04em;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.25rem;
+    column-gap: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.grid-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+
+.color-cool-gray { color: #374151; }
+.color-warm-gray { color: #78716c; }
+.color-amber     { color: #c2410c; }
+.color-green     { color: #14532d; }
+
+.color-cyan      { color: #0e7490; }
+.color-red       { color: #dc2626; }
+.color-yellow    { color: #eab308; }
+.color-emerald   { color: #064e3b; }
+
+.color-sky       { color: #0284c7; }
+.color-orange    { color: #ea580c; }
+.color-lime      { color: #4d7c0f; }
+.color-teal      { color: #115e59; }
+
+.color-fuchsia   { color: #a21caf; }
+.color-pink      { color: #db2777; }
+.color-rose      { color: #f43f5e; }
+.color-blue-gray { color: #0f172a; }
+
+.color-purple    { color: #7e22ce; }
+.color-violet    { color: #6d28d9; }
+.color-indigo    { color: #3730a3; }
+.color-blue      { color: #1d4ed8; }
+
+@media (max-width: 640px) {
+    .main-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item {
+          font-size: 1.25rem;
+    }
+}
